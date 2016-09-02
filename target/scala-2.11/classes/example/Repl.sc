@@ -1,3 +1,5 @@
-var a: List[Int] = List(1,2,3,4)
+var a: List[Int] = List()
 
-a.tail(0)
+a.tail(0) | 0
+
+

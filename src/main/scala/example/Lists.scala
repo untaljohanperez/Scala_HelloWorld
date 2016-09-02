@@ -24,6 +24,7 @@ object Lists {
    * @return The sum of all elements in `xs`
    */
     def sum(xs: List[Int]): Int = {
+      if (xs.isEmpty) return 0
       if(xs.tail.isEmpty) return xs.head
       xs.head + sum(xs.tail)
     }
@@ -56,7 +57,7 @@ object Lists {
       else
         return greather(tail)
     }
-s
+
 /*
   def greather(xs: List[Int]): Int ={
     var head = xs.head

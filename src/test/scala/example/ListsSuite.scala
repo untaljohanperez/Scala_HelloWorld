@@ -121,6 +121,8 @@ import org.scalatest.junit.JUnitRunner
     assert(max(List(3, 7, 2)) === 7)
   }
 
-
+  test("sum of empty list is zero"){
+    assert(sum(List()) === 0)
+  }
 
 }
